@@ -1,2 +1,0 @@
-# smoked-meat
-smoked meat
