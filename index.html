@@ -25,21 +25,22 @@
     <h1>Копченое мясо от Ромы</h1>
   </header>
 
-  <div class="catalog">
+ <div class="catalog">
     <div class="item">
       <img src="img/grudinka.jpg" alt="Грудинка копчена">
       <div class="info">
         <h2>Грудинка копчена</h2>
         <div class="price">250 грн/кг</div>
-        <a href="#" class="btn">Замовити</a>
+        <button class="btn" onclick="showContact()">Замовити</button>
       </div>
+    </div>
     </div>
     <div class="item">
       <img src="img/rebra.jpg" alt="Ребра копчені">
       <div class="info">
         <h2>Ребра копчені</h2>
         <div class="price">220 грн/кг</div>
-        <a href="#" class="btn">Замовити</a>
+         <button class="btn" onclick="showContact()">Замовити</button>
       </div>
     </div>
     <div class="item">
@@ -47,7 +48,7 @@
       <div class="info">
         <h2>Шийка копчена</h2>
         <div class="price">270 грн/кг</div>
-        <a href="#" class="btn">Замовити</a>
+        <button class="btn" onclick="showContact()">Замовити</button>
       </div>
     </div>
   </div>
@@ -55,5 +56,10 @@
   <footer>
     © 2026 Копченое мясо от Ромы. Всі права захищені.
   </footer>
+  <script>
+    function showContact() {
+      alert("Для замовлення телефонуйте: +380 67 123 45 67\nІм'я: Роман");
+    }
+  </script>
 </body>
 </html>
