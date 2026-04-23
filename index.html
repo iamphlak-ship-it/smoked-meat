@@ -2,22 +2,40 @@
 <html lang="uk">
 <head>
   <meta charset="UTF-8">
-  <title>Каталог копченого м'яса</title>
-  <meta name="description" content="Простий каталог копченого м'яса">
+  <title>Копчене м'ясо — каталог</title>
+  <meta name="description" content="Каталог копченого м'яса з цінами та фото">
   <style>
-    body { font-family: Arial, sans-serif; margin: 2em; background: #fdfdfd; }
-    h1 { color: #8B0000; }
-    ul { list-style: none; padding: 0; }
-    li { margin: 0.5em 0; padding: 0.5em; border-bottom: 1px solid #ccc; }
-    .price { font-weight: bold; color: #006400; }
+    body { font-family: Arial, sans-serif; margin: 2em; background: #fafafa; }
+    h1 { color: #8B0000; text-align: center; }
+    .catalog { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+    .item { background: #fff; border: 1px solid #ccc; border-radius: 8px; width: 250px; padding: 15px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    .item img { max-width: 100%; border-radius: 6px; }
+    .price { font-weight: bold; color: #006400; margin: 10px 0; }
+    .btn { display: inline-block; padding: 8px 12px; background: #8B0000; color: #fff; text-decoration: none; border-radius: 4px; }
+    .btn:hover { background: #A52A2A; }
   </style>
 </head>
 <body>
   <h1>Каталог копченого м'яса</h1>
-  <ul>
-    <li>Грудинка копчена — <span class="price">250 грн/кг</span></li>
-    <li>Ребра копчені — <span class="price">220 грн/кг</span></li>
-    <li>Шийка копчена — <span class="price">270 грн/кг</span></li>
-  </ul>
+  <div class="catalog">
+    <div class="item">
+      <img src="img/grudinka.jpg" alt="Грудинка копчена">
+      <h2>Грудинка копчена</h2>
+      <div class="price">250 грн/кг</div>
+      <a href="#" class="btn">Замовити</a>
+    </div>
+    <div class="item">
+      <img src="img/rebra.jpg" alt="Ребра копчені">
+      <h2>Ребра копчені</h2>
+      <div class="price">220 грн/кг</div>
+      <a href="#" class="btn">Замовити</a>
+    </div>
+    <div class="item">
+      <img src="img/sheika.jpg" alt="Шийка копчена">
+      <h2>Шийка копчена</h2>
+      <div class="price">270 грн/кг</div>
+      <a href="#" class="btn">Замовити</a>
+    </div>
+  </div>
 </body>
 </html>
