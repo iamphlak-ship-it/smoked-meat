@@ -2,7 +2,7 @@
 <html lang="uk">
 <head>
   <meta charset="UTF-8">
-  <title>Копченое мясо от Ромы</title>
+  <title>Копчене м'ясо — магазин</title>
   <meta name="description" content="Вітрина копченого м'яса з фото та цінами">
   <style>
     body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f4f4f4; }
@@ -15,17 +15,17 @@
     .info { padding: 15px; text-align: center; }
     .info h2 { margin: 0; font-size: 1.2em; color: #333; }
     .price { font-size: 1.1em; font-weight: bold; color: #006400; margin: 10px 0; }
-    .btn { display: inline-block; padding: 10px 15px; background: #8B0000; color: #fff; text-decoration: none; border-radius: 5px; }
+    .btn { display: inline-block; padding: 10px 15px; background: #8B0000; color: #fff; text-decoration: none; border-radius: 5px; cursor: pointer; }
     .btn:hover { background: #A52A2A; }
     footer { text-align: center; padding: 1em; background: #333; color: #fff; margin-top: 20px; }
   </style>
 </head>
 <body>
   <header>
-    <h1>Копченое мясо от Ромы.</h1>
+    <h1>Магазин копченого м'яса</h1>
   </header>
 
- <div class="catalog">
+  <div class="catalog">
     <div class="item">
       <img src="img/grudinka.jpg" alt="Грудинка копчена">
       <div class="info">
@@ -34,13 +34,12 @@
         <button class="btn" onclick="showContact()">Замовити</button>
       </div>
     </div>
-    </div>
     <div class="item">
       <img src="img/rebra.jpg" alt="Ребра копчені">
       <div class="info">
         <h2>Ребра копчені</h2>
         <div class="price">220 грн/кг</div>
-         <button class="btn" onclick="showContact()">Замовити</button>
+        <button class="btn" onclick="showContact()">Замовити</button>
       </div>
     </div>
     <div class="item">
@@ -54,8 +53,9 @@
   </div>
 
   <footer>
-    © 2026 Копченое мясо от Ромы. Всі права захищені.
+    © 2026 Копчене м'ясо. Всі права захищені.
   </footer>
+
   <script>
     function showContact() {
       alert("Для замовлення телефонуйте: +380 67 123 45 67\nІм'я: Роман");
